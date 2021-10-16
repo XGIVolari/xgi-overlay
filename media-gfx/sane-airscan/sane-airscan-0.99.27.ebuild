@@ -12,7 +12,10 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND=""
+DEPEND="net-dns/avahi
+            dev-libs/libxml2
+            net-libs/gnutls
+            media-gfx/sane-backends"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
