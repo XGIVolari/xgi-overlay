@@ -1,0 +1,4 @@
+sys-libs/glibc cet
+sys-devel/binutils cet
+sys-libs/binutils-libs cet
+
