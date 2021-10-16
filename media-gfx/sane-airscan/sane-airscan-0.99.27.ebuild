@@ -15,7 +15,7 @@ IUSE=""
 DEPEND="net-dns/avahi
             dev-libs/libxml2
             net-libs/gnutls
-            media-gfx/sane-backends"
+            media-gfx/sane-backends[sane_backends_net]"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
