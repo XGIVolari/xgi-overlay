@@ -23,7 +23,6 @@ LICENSE="MIT"
 SLOT="0"
 IUSE="chamelium doc man overlay runner tests unwind valgrind video_cards_amdgpu video_cards_intel video_cards_nouveau X xv"
 REQUIRED_USE="
-	|| ( video_cards_amdgpu video_cards_intel video_cards_nouveau )
 	overlay? (
 		video_cards_intel
 		|| ( X xv )
