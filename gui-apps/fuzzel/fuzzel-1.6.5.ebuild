@@ -1,7 +1,7 @@
 # Copyright 2021 Aisha Tammy
 # Distributed under the terms of the ISC License
 
-EAPI=7
+EAPI=8
 
 inherit meson xdg
 
@@ -42,8 +42,8 @@ src_configure() {
 	local emesonargs=(
 		-Dwerror=false
 		$(meson_feature cairo enable-cairo)
-		$(meson_feature png enable-png)
-		$(meson_feature svg enable-svg)
+		$(meson_feature png png-backend=libpng)
+		$(meson_feature svg svg-backend=librsvg)
 	)
 	meson_src_configure
 }
