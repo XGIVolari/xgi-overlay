@@ -30,7 +30,7 @@ BDEPEND="test? ( dev-python/lit )"
 
 REQUIRED_USE="test? ( tools )"
 
-LLVM_MAX_SLOT=12
+LLVM_MAX_SLOT=13
 
 src_prepare() {
 	append-flags -fPIC
