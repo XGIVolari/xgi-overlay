@@ -34,6 +34,7 @@ multilib_src_configure() {
 	local mycmakeargs=(
 		-DCMAKE_INSTALL_PREFIX="$(get_llvm_prefix ${LLVM_MAX_SLOT})"
 		-DCLANG_LIBRARY_DIRS="${EPREFIX}"/usr/lib/clang
+		-DPREFERRED_LLVM_VERSION="13.0.0"
 	)
 	cmake_src_configure
 }
