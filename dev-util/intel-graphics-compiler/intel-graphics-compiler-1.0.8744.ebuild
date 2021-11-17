@@ -57,6 +57,7 @@ src_configure() {
 	local mycmakeargs=(
 		# Those options are ensuring, that we are using
 		# the system LLVM with the correct slot.
+		-DIGC_OPTION__LLVM_PREFERRED_VERSION="13.0.0"
 
 		# VectorCompiler needs work, as at the moment upstream
 		# only supports building vc-intrinsics in place.
