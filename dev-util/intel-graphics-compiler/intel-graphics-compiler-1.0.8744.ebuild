@@ -38,7 +38,7 @@ PATCHES=(
 	"${FILESDIR}/${PN}-1.0.8173-opencl-clang_version.patch"
 	"${FILESDIR}/${PN}-1.0.8365-disable-git.patch"
 	"${FILESDIR}/${PN}-1.0.8365-cmake-project.patch"
-	"${FILESDIR}/${PN}-1.0.8744.llvm_deps.patch"
+	"${FILESDIR}/${PN}-1.0.8744-llvm_deps.patch"
 )
 
 pkg_setup() {
