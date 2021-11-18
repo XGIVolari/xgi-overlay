@@ -32,10 +32,6 @@ RESTRICT="!test? ( test )"
 
 DOCS=( Readme.md )
 
-PATCHES=(
-	"${FILESDIR}"/${PN}-0_p20200904-cmake_libdir.patch
-)
-
 S="${WORKDIR}/${MY_P}"
 
 multilib_src_configure() {
