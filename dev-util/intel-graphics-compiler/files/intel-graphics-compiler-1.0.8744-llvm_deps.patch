@@ -1,5 +1,5 @@
---- a/external/llvm/llvm_deps
-+++ b/external/llvm/llvm_deps
+--- a/external/llvm/llvm_deps.cmake
++++ b/external/llvm/llvm_deps.cmake
 @@ -44,7 +44,7 @@ include(llvm_spirv_source_hook)
  # LLD source hook.
  if(IGC_OPTION__LLVM_LLD)
