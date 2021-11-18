@@ -57,11 +57,14 @@ src_configure() {
 	local mycmakeargs=(
 		# Those options are ensuring, that we are using
 		# the system LLVM with the correct slot.
-		-DIGC_OPTION__LLVM_PREFERRED_VERSION="13.0.0"
-
-		# VectorCompiler needs work, as at the moment upstream
-		# only supports building vc-intrinsics in place.
-		-DIGC_BUILD__VC_ENABLED="NO"
+		-DCCLANG_SONAME_VERSION="${LLVM_MAX_SLOT}"
+		-DCMAKE_LIBRARY_PATH="$(get_llvm_prefix ${LLVM_MAX_SLOT})/$(get_libdir)"
+		-DIGC_OPTION__ARCHITECTURE_TARGET="Linux64"
+		-DIGC_OPTION__CLANG_MODE="Prebuilds"
+		-DIGC_OPTION__LLD_MODE="Prebuilds"
+		-DIGC_OPTION__LLDELF_H_DIR="${EPREFIX}/usr/include/lld/Common"
+		-DIGC_OPTION__LLVM_MODE="Prebuilds"
+		-DIGC_OPTION__LLVM_PREFERRED_VERSION="${llvm_version##*-}"
 
 		# This will suspress some CMake warnings,
 		# which cannot be fixed at the moment.
