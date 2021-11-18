@@ -66,6 +66,7 @@ src_configure() {
 		-DIGC_OPTION__LLDELF_H_DIR="${EPREFIX}/usr/include/lld/Common"
 		-DIGC_OPTION__LLVM_MODE="Prebuilds"
 		-DIGC_OPTION__LLVM_PREFERRED_VERSION="${llvm_version##*-}"
+		-DLLVM_EXTERNAL_SPIRV_HEADERS_SOURCE_DIR="${ESYSROOT}"/usr
 
 		# This will suspress some CMake warnings,
 		# which cannot be fixed at the moment.
