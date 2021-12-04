@@ -13,6 +13,8 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~x86 ~amd64"
 
-DEPEND="dev-util/wayland-scanner"
+DEPEND="dev-libs/wayland
+		dev-util/wayland-scanner
+		media-libs/libglvnd"
 RDEPEND="${DEPEND}"
 
