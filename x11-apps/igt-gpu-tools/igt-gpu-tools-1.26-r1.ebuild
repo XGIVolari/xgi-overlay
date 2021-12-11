@@ -100,7 +100,6 @@ src_configure() {
 		$(meson_feature runner)
 		$(meson_feature tests)
 		$(meson_feature valgrind)
-		$(meson_feature unwind libunwind)
 		-Doverlay_backends=${overlay_backends%?}
 		-Dlibdrm_drivers=${gpus%?}
 	)
