@@ -57,7 +57,6 @@ RDEPEND="
 		)
 	)
 	runner? ( dev-libs/json-c:= )
-	unwind? ( sys-libs/libunwind )
 	valgrind? ( dev-util/valgrind )
 	"
 DEPEND="${RDEPEND}
