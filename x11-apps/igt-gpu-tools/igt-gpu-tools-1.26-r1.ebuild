@@ -23,6 +23,7 @@ LICENSE="MIT"
 SLOT="0"
 IUSE="chamelium doc man overlay runner tests unwind valgrind video_cards_amdgpu video_cards_intel video_cards_nouveau X xv"
 REQUIRED_USE="
+	|| ( video_cards_amdgpu video_cards_intel video_cards_nouveau )
 	overlay? (
 		video_cards_intel
 		|| ( X xv )
@@ -75,6 +76,9 @@ BDEPEND="${PYTHON_DEPS}"
 
 src_prepare() {
 	sed -e "s/find_program('rst2man-3'/find_program('rst2man.py', 'rst2man-3'/" -i man/meson.build
+	local PATCHES=(
+		"${FILESDIR}"/igt-gpu-tools-1.26-lib-meson-build-Fix-underscorify-call.patch
+	)
 	default_src_prepare
 }
 
