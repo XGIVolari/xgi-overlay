@@ -64,7 +64,10 @@ COMMON_DEPEND="
 	dev-libs/popt[${MULTILIB_USEDEP}]
 	dev-perl/Parse-Yapp
 	>=net-libs/gnutls-3.4.7[${MULTILIB_USEDEP}]
-	sys-libs/e2fsprogs-libs[${MULTILIB_USEDEP}]
+	|| (
+		>=sys-fs/e2fsprogs-1.46.4-r51[${MULTILIB_USEDEP}]
+		sys-libs/e2fsprogs-libs[${MULTILIB_USEDEP}]
+	)
 	>=sys-libs/ldb-2.4.1[ldap(+)?,${MULTILIB_USEDEP}]
 	<sys-libs/ldb-2.5.0[ldap(+)?,${MULTILIB_USEDEP}]
 	sys-libs/libcap[${MULTILIB_USEDEP}]
@@ -291,7 +294,7 @@ multilib_src_install() {
 
 		dotmpfiles "${FILESDIR}"/samba.conf
 		if ! use addc ; then
-			rm "${ED}/$(systemd_get_systemunitdir)/samba.service" \
+			rm "${D}/$(systemd_get_systemunitdir)/samba.service" \
 				|| die
 		fi
 
