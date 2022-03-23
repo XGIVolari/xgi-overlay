@@ -41,7 +41,7 @@ DEPEND="
 		x11-libs/libxcb
 		x11-base/xwayland
 	)
-	system-wfconfig? ( ~gui-libs/wf-config-0.7.9999:= )
+	system-wfconfig? ( ~gui-libs/wf-config-0.7.1:= )
 	!system-wfconfig? ( !gui-libs/wf-config )
 	system-wlroots? ( ~gui-libs/wlroots-0.15.1:=[X?] )
 	!system-wlroots? ( !gui-libs/wlroots )
