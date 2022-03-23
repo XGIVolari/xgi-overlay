@@ -11,7 +11,7 @@ HOMEPAGE="https://github.com/WayfireWM/wayfire"
 if [[ ${PV} == 0.7.9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/WayfireWM/${PN}.git"
-	EGI_BRANCH="0.7.x"
+	EGIT_BRANCH="0.7.x"
 else
 	SRC_URI="https://github.com/WayfireWM/${PN}/releases/download/v${PV}/${P}.tar.xz"
 	KEYWORDS="~amd64 ~arm64 ~riscv ~x86"
