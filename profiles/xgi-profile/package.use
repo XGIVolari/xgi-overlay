@@ -1,0 +1,25 @@
+dev-python/setuptools python_targets_python3_9
+dev-python/pygments python_targets_python3_9
+dev-python/dbus-python python_targets_python3_9
+
+=media-libs/lv2-1.18.2 python_single_target_python3_9
+=xfce-base/xfce4-settings-4.16.2 python_single_target_python3_9
+
+=sys-apps/i2c-tools-4.3 python_targets_python3_9
+
+=dev-python/importlib_metadata-4.11.3 python_targets_python3_9
+
+=dev-python/jaraco-text-3.7.0-r2 python_targets_python3_9
+=dev-python/jaraco-context-4.1.1-r2 python_targets_python3_9
+=dev-python/jaraco-functools-3.5.0-r2 python_targets_python3_9
+
+=media-sound/cadence-0.9.1-r2 python_single_target_python3_9
+
+=dev-python/nspektr-0.3.0 python_targets_python3_9
+
+=dev-python/toml-0.10.2 python_targets_python3_9
+
+=sys-apps/apparmor-utils-3.0.3 python_targets_python3_9
+=sys-libs/libapparmor-3.0.3 python_targets_python3_9
+=dev-python/notify2-0.3.1-r3 python_targets_python3_9
+=dev-python/psutil-5.9.0 python_targets_python3_9

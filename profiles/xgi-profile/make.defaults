@@ -4,8 +4,8 @@ AV_CODECS="a52 aac dav1d dts encode exif ffmpeg gif flac jpeg jpeg2k ladspa libg
 COMPRESSION="archive blake2 brotli bzip2 lz4 lzma lzo rar zip zlib zstd"
 NET="curl gstreamer idn ipv6 iwd networkmanager nfs nftables resolvconf samba sctp snmp wifi zeroconf bpf libproxy"
 SECURITY="acl apparmor audit cacert caps cet crypt gcrypt gnutls pkcs7 pkcs11 seccomp ssl hardened pie ssp kerberos gnome-keyring xxhash tpm"
-GRAPHICS="cairo drm egl eglfs gbm gegl gles1 gles2 gles2-only gtk gtk3 gui kms layers libkms modern-top ncurses opengl pango sdl vulkan wayland widgets wxwidgets tk"
-USELESS="-abi_x86_32 -berkdb -cdda -cdio -doc -dvd -dvdnav -fbdev -gpm -gtk2 -gtk-doc -ldap -passwdqc -smartcard -sasl -spell -tcl -tcpd -ttf -vdpau -qt5 -xv"
+GRAPHICS="cairo drm egl eglfs gbm gegl gles1 gles2 gtk gtk3 gui kms layers libkms modern-top ncurses opengl pango sdl vulkan wayland widgets wxwidgets tk"
+USELESS="-abi_x86_32 -berkdb -cdda -cdio -doc -dvd -dvdnav -fbdev -gpm -gtk2 -doc -ldap -passwdqc -smartcard -spell -tcl -tcpd -ttf -vdpau -xv"
 
 USE="${AV_CODECS} ${COMPRESSION} ${NET} ${SECURITY} ${GRAPHICS} ${KDE} ${GNOME} ${USELESS} alsa bluetooth boost branding cjk clang cli cups dbus device-mapper expat fontconfig fortran gdbm git gmp iconv icu jack jemalloc jit lcms libnotify libtirpc llvm-libunwind lm-sensors lto lvm metric modern-top mtp multilib multitarget nls nptl numa openmp pcre pdf pgo pipewire pulseaudio readline scanner session sound split-usr startup-notification syslog threads truetype udev unicode upower usb user-session vim-syntax xattr xml zsh-completion colord opencl cxx mpi hwloc hugepages otf mpfr tdb sqlite screencast glib"
 
