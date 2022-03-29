@@ -1,3 +1,83 @@
+sys-power/acpi_call examples
+media-plugins/alsa-plugins -pulseaudio
+net-dns/avahi autoipd
+#sys-apps/busybox static -pam systemd -syslog
+#>=sys-libs/libxcrypt-4.4.26 static-libs
+#>=virtual/libcrypt-2 static-libs
+#sys-fs/lvm2 static static-libs -udev -systemd -device-mapper-only -thin
+#>=dev-libs/libaio-0.3.112 static-libs
+#>=sys-apps/util-linux-2.37.2-r1 static-libs
+#sys-fs/cryptsetup static -gcrypt -udev openssl
+#>=app-crypt/argon2-20190702 static-libs
+#>=dev-libs/popt-1.18 static-libs
+#>=dev-libs/json-c-0.15 static-libs
+#app-crypt/tpm2-tss static-libs
+#sys-libs/readline static-libs
+#sys-libs/ncurses static-libs
+#>=dev-libs/openssl-1.1.1m static-libs
+media-sound/cadence a2jmidid
+mate-base/caja -mate
+sys-devel/clang default-lld default-compiler-rt
+sys-fs/cryptsetup -openssl
+net-misc/curl -threads adns quiche hsts -curl_ssl_openssl curl_ssl_nss -pop3 -imap nss
+gui-wm/dwl savedconfig
+dev-libs/efl gles avif bmp dds fribidi gles2-only glib harfbuzz hyphen ibus ico json -opengl physics pmaps postscript psd raw scim tga tgv xcf xpm xpresent avahi libuv -gstreamer fbcon eo luajit
+#x11-wm/enlightenment xwayland
+x11-wm/enlightenment ukit enlightenment_modules_*
+dev-libs/weston wayland-compositor xwayland fullscreen ivi screen-sharing remoting rdp kiosk headless fbdev
+media-video/ffmpeg libdrm dav1d libxml2 openal chromium openssl theora
+www-client/firefox screencast wifi jack sndio pgo system-png
+media-libs/libpng apng
+mail-client/thunderbird system-png
+net-firewall/firewalld -iptables
+media-fonts/fonts-meta emoji ms
+gui-apps/foot ime
+sys-apps/fwupd amt fastboot flashrom gusb nvme spi thunderbolt tpm uefi
+sys-devel/gcc graphite -jit custom-cflags
+sys-libs/gdbm berkdb
+sys-kernel/gentoo-kernel savedconfig -hardened -initramfs
+sys-kernel/gentoo-sources experimental
+app-text/ghostscript-gpl -l10n_ko -l10n_zh-CN -l10n_zh-TW
+sys-libs/glibc -custom-cflags cet -multiarch
+sys-apps/gnome-disk-utility fat
+gnome-base/gnome -extras -classic
+gnome-extra/nm-applet appindicator
+#x11-terms/gnome-terminal -gnome-shell -nautilus
+media-plugins/grilo-plugins lua lua_single_target_lua5-3
+gnome-base/gvfs fuse
+sys-apps/i2c-tools python perl
+sys-firmware/intel-microcode hostonly
+net-firewall/iptables conntrack netlink
+net-wireless/iwd -crda wired
+sys-libs/ldb -python
+app-text/lesspipe libreoffice 
+app-arch/libarchive nettle
+media-libs/libmediaart -qt5
+app-office/libreoffice pdfimport custom-cflags java
+x11-libs/libva utils -opengl
+x11-libs/libva-intel-media-driver set-as-default
+sys-libs/libxcrypt system
+sys-devel/llvm -gold z3 xar
+media-video/wireplumber lua_single_target_lua5-4
+net-analyzer/nmap lua_single_target_lua5-3
+media-libs/mesa osmesa -opencl 
+net-misc/networkmanager -ppp -nss bluetooth modemmanager -resolvconf -dhcpcd -wext -syslog
+net-fs/nfs-utils nfsv41
+dev-libs/libdbusmenu -gtk
+media-libs/libcanberra -gtk
+app-text/poppler nss
+media-libs/opencv -gtk3
+dev-java/openjdk pch
+#sys-apps/openrc sysv-utils
+net-misc/openssh hpn ldns security-key xmss
+app-misc/pax-utils python
+net-im/pidgin -gstreamer
+media-video/pipewire extra jack-sdk pipewire-alsa
+kde-plasma/plasma-meta browser-integration
+>=www-client/w3m-0.5.3_p20180125 imlib
+>=x11-base/xorg-server-1.20.11 xvfb
+>=media-libs/libvpx-1.9.0 postproc
+media-sound/pulseaudio -alsa-plugin
 dev-python/setuptools python_targets_python3_9
 dev-python/pygments python_targets_python3_9
 dev-python/dbus-python python_targets_python3_9
@@ -23,3 +103,80 @@ dev-python/dbus-python python_targets_python3_9
 =sys-libs/libapparmor-3.0.3 python_targets_python3_9
 =dev-python/notify2-0.3.1-r3 python_targets_python3_9
 =dev-python/psutil-5.9.0 python_targets_python3_9
+dev-lang/rust rustfmt system-llvm llvm_targets_BPF
+>=sys-apps/xdg-desktop-portal-1.8.1 screencast
+>=app-text/texlive-core-2021 xetex
+>=dev-lang/php-7.4.20:7.4 truetype pcntl sockets curl gd zip
+>=dev-lang/php-8.0.7 gd
+>=media-libs/gst-plugins-base-1.16.3 theora
+#net-fs/samba winbind ads python
+media-gfx/sane-backends -sane_backends_escl
+media-fonts/source-han-sans l10n_zh-CN
+#dev-lang/spidermonkey -lto
+media-sound/spotify systray
+app-admin/sudo -ssl -ldap
+sys-apps/systemd tpm dns-over-tls nat elfutils xkb
+=mail-client/thunderbird-91.7.0 system-av1
+xfce-extra/tumbler -gstreamer
+net-firewall/ufw examples
+gui-apps/waybar popups tray wifi waybar network
+#=gui-wm/wayfire-9999 -system-wlroots
+media-libs/mesa X
+x11-libs/gtk+ X
+media-libs/imlib2 -shm
+sys-apps/dbus X
+x11-libs/libxkbcommon X
+media-video/mpv opengl
+media-libs/gst-plugins-base opengl X
+media-libs/gst-plugins-bad opengl
+media-plugins/gst-plugins-gtk opengl X
+xfce-base/xfce4-settings libcanberra
+xfce-base/libxfce4ui system-info
+sys-libs/zlib minizip
+>=net-dns/avahi-0.8-r4 mdnsresponder-compat
+>=media-libs/freetype-2.10.4 harfbuzz
+>=media-libs/opus-1.3.1-r2 custom-modes
+#FLAGS SET BY PORTAGE
+# required by media-libs/gegl-0.4.32::gentoo
+# required by media-libs/libmypaint-1.6.1::gentoo[gegl]
+# required by media-gfx/gimp-2.99.6::gentoo
+# required by gimp (argument)
+>=media-libs/babl-0.1.88 introspection
+# required by media-gfx/gimp-2.99.6::gentoo
+# required by gimp (argument)
+>=media-libs/gegl-0.4.32 introspection
+# required by net-firewall/firewalld-1.0.1::gentoo[iptables,nftables]
+# required by firewalld (argument)
+>=net-firewall/nftables-1.0.0 xtables json python
+# required by dev-libs/msgpack-3.3.0::gentoo[boost]
+# required by app-editors/neovim-0.5.1::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-libs/boost-1.77.0-r2 context
+# required by media-gfx/simple-scan-40.5::gentoo[colord]
+# required by @selected
+# required by @world (argument)
+>=x11-misc/colord-1.4.5-r1 vala
+# required by net-fs/samba-4.15.3-r1::xgi-overlay[-python_single_target_python3_10,python_single_target_python3_9,-python_single_target_python3_8,ads]
+# required by samba (argument)
+>=net-dns/bind-tools-9.16.22 gssapi
+# required by net-fs/samba-4.15.3-r1::xgi-overlay[python]
+# required by samba (argument)
+>=sys-libs/ldb-2.4.1 python
+# required by sys-libs/ldb-2.4.1::gentoo[python]
+# required by net-fs/samba-4.15.3-r1::xgi-overlay
+# required by samba (argument)
+>=sys-libs/tdb-1.4.5 python
+# required by sys-libs/ldb-2.4.1::gentoo[python]
+# required by net-fs/samba-4.15.3-r1::xgi-overlay
+# required by samba (argument)
+>=sys-libs/tevent-0.11.0 python
+# required by sys-apps/hwloc-2.6.0::gentoo[gl]
+# required by sys-cluster/openmpi-4.1.2::gentoo
+# required by virtual/mpi-2.0-r6::gentoo
+# required by dev-libs/boost-1.78.0-r2::gentoo[mpi]
+# required by dev-libs/msgpack-3.3.0::gentoo[boost]
+# required by app-editors/neovim-0.6.1::gentoo
+# required by @selected
+# required by @world (argument)
+>=x11-drivers/nvidia-drivers-510.39.01 static-libs
