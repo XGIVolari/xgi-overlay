@@ -5,6 +5,15 @@ FFLAGS="${CFLAGS}"
 LDFLAGS="${CFLAGS} ${LDFLAGS} -Wl,-O2 -Wl,-z,relro,-z,now"
 RUSTFLAGS="-C target-cpu=native -C opt-level=3 -Clinker-plugin-lto -C embed-bitcode=no"
 
+CMAKE_MAKEFILE_GENERATOR=ninja
+PORTDIR="/var/db/repos/gentoo"
+DISTDIR="/var/cache/distfiles"
+PKGDIR="/var/cache/binpkgs"
+LC_MESSAGES=C
+ACCEPT_LICENSE="*"
+ACCEPT_KEYWORDS="~amd64"
+FEATURES="cgroup parallel-install"
+
 GNOME="modemmanager -weather -geolocation gnome-online-accounts -browser-extension gnome-shell gnome gtk4 oauth webkit"
 KDE="-crash-handler -handbook -display-manager -firewall -legacy-systray -sddm -vlc -webengine"
 AV_CODECS="a52 aac avif dav1d dts encode exif ffmpeg gif flac heif jpeg jpeg2k ladspa libgig lv2 mad midi mng mp3 mp4 mpeg ogg openh264 opus png svg theora tiff vaapi vorbis vpx webp x264 x265"
@@ -14,7 +23,7 @@ SECURITY="acl apparmor audit cacert caps cet crypt gcrypt gnutls pkcs7 pkcs11 se
 GRAPHICS="cairo drm egl eglfs gbm gegl gles1 gles2 gtk gtk3 gtk4 harfbuzz gui kms layers libdrm libkms modern-top ncurses opengl pango sdl vulkan wayland widgets wxwidgets"
 USELESS="-abi_x86_32 -berkdb -cdda -cdio -doc -dvd -dvdnav -fbdev -geolocation -gpm -gtk2 -doc -passwdqc -smartcard -spell -tcl -tcpd -ttf -xv -gtk-doc"
 
-MISCUSE="alsa bluetooth boost branding cjk clang cli cups dbus device-mapper expat fontconfig fortran gdbm git gmp iconv icu jack jemalloc jit lcms libnotify libtirpc llvm-libunwind lm-sensors lto lvm metric modern-top mtp multilib multitarget nls nptl numa openmp pcre pdf pgo pipewire pulseaudio readline scanner session sound split-usr startup-notification syslog threads truetype udev unicode upower usb user-session vim-syntax xattr xml zsh-completion colord opencl cxx mpi hwloc hugepages otf mpfr tdb sqlite screencast glib"
+MISCUSE="alsa bluetooth boost branding cjk clang cli cups dbus device-mapper expat fontconfig fortran gdbm git gmp iconv icu jack jemalloc jit lcms libnotify libtirpc llvm-libunwind lm-sensors lto lvm metric modern-top mtp multilib multitarget nls nptl numa openmp pcre pdf pgo pipewire pulseaudio readline scanner session sound split-usr startup-notification syslog threads truetype udev unicode upower usb user-session vim-syntax xattr xml zsh-completion colord opencl cxx mpi hwloc hugepages otf mpfr tdb sqlite screencast glib system-zlib"
 
 INPUT_DEVICES="libinput"
 RUBY_TARGETS="ruby31"
