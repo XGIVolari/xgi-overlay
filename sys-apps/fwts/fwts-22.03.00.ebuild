@@ -22,7 +22,6 @@ RDEPEND="dev-libs/glib:2
 	sys-apps/dtc
 	sys-apps/pciutils
 	sys-power/iasl
-	sys-power/pmtools
 	"
 DEPEND="${RDEPEND}
 	sys-devel/libtool"
