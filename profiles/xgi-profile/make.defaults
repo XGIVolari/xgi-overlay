@@ -2,7 +2,7 @@ CFLAGS="-march=native ${CFLAGS} -pipe -D_FORTIFY_SOURCE=2 -Werror=format-securit
 CXXFLAGS="${CFLAGS}"
 FCFLAGS="${CFLAGS}"
 FFLAGS="${CFLAGS}"
-LDFLAGS="${CFLAGS} ${LDFLAGS} -Wl,-O2 -Wl,-z,relro,-z,now"
+LDFLAGS="${CFLAGS} -Wl,-O2 -Wl,-z,relro,-z,now"
 RUSTFLAGS="-C target-cpu=native -C opt-level=3 -Clinker-plugin-lto -C embed-bitcode=no"
 
 CMAKE_MAKEFILE_GENERATOR=ninja
@@ -14,7 +14,7 @@ ACCEPT_LICENSE="*"
 ACCEPT_KEYWORDS="~amd64"
 FEATURES="cgroup parallel-install"
 
-GNOME="modemmanager -weather -geolocation gnome-online-accounts -browser-extension gnome-shell gnome gtk4 oauth webkit"
+GNOME="modemmanager weather geolocation gnome-online-accounts browser-extension gnome-shell gnome gtk4 oauth webkit"
 KDE="-crash-handler -handbook -display-manager -firewall -legacy-systray -sddm -vlc -webengine"
 AV_CODECS="a52 aac avif chromium dav1d dts encode exif ffmpeg gif flac heif jpeg jpeg2k ladspa libgig lv2 mad midi mng mp3 mp4 mpeg ogg openal openh264 opus png svg theora tiff vaapi vorbis vpx webp x264 x265 xpm"
 COMPRESSION="archive blake2 brotli bzip2 lz4 lzma lzo minizip rar xar zip zlib zstd"
